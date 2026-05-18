@@ -1,0 +1,128 @@
+#contact{
+  min-height: 100vh;
+  padding: 100px 10%;
+  position: relative;
+
+  background: url("../Media/background.png") center/cover no-repeat;
+  color: white;
+}
+
+/* overlay */
+#contact::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.65);
+}
+
+#contact > *{
+  position: relative;
+  z-index: 1;
+}
+
+/* wrapper */
+.contact-wrapper{
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+/* heading */
+.contact-wrapper h2{
+  font-size: 3rem;
+  color: #ff7b00;
+  margin-bottom: 10px;
+}
+
+.contact-wrapper p{
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+/* FORM (FIRST) */
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: white;
+  outline: none;
+  backdrop-filter: blur(8px);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+  color: #bbb;
+}
+
+.contact-form button{
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#ff9d42,#ff7b00);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255,123,0,0.3);
+}
+
+/* ICON CONTACT OPTIONS */
+.contact-icons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.contact-icons a{
+  text-decoration: none;
+  color: #eaeaea;
+  font-size: 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 14px;
+  border-radius: 10px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  transition: 0.3s ease;
+}
+
+.contact-icons a span{
+  color: #ff9d42;
+  font-weight: 500;
+}
+
+.contact-icons a:hover{
+  transform: translateY(-4px);
+  border-color: #ff7b00;
+  background: rgba(255,123,0,0.08);
+}
+
+/* responsive */
+@media(max-width:768px){
+  .contact-wrapper h2{
+    font-size: 2.2rem;
+  }
+
+  .contact-icons{
+    gap: 12px;
+  }
+}
