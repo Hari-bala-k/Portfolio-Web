@@ -110,8 +110,13 @@ html{
   transition:0.3s;
 }
 
-.nav-links a:hover{
+.nav-links a:hover,
+.nav-links a.active{
   color:#ff6600;
+}
+
+.nav-links a.active::after{
+  width:100%;
 }
 
 .nav-links a:hover::after{
@@ -120,7 +125,7 @@ html{
 
 /* GITHUB BUTTON */
 
-.github-btn{
+.navbar .github-btn{
 
   text-decoration:none;
 
@@ -138,7 +143,7 @@ html{
   transition:0.3s;
 }
 
-.github-btn:hover{
+.navbar .github-btn:hover{
   background:#ff6600;
   transform:translateY(-2px);
   box-shadow:0 0 15px rgba(255,102,0,0.3);
@@ -258,6 +263,45 @@ html{
   border-color:#ff6600;
   color:#ff6600;
 }
+
+/* RESPONSIVE NAVBAR */
+
+@media (max-width: 860px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .nav-links {
+    flex: 1 1 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 18px 18px;
+  }
+
+  .nav-links {
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  .navbar .github-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 
 /* HERO IMAGE */
 .hero-image{
