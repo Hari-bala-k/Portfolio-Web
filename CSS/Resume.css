@@ -2,6 +2,43 @@
    RESUME SECTION - FINAL
 ========================= */
 
+
+/* NAVBAR */
+
+.navbar{
+
+  width:92%;
+
+  margin:15px auto;
+
+  padding:18px 28px;
+
+  background:rgba(20,20,20,0.9);
+
+  border:1px solid #222;
+
+  border-radius:16px;
+
+  backdrop-filter:blur(10px);
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+}
+
+/* LOGO */
+
+.logo{
+  font-size:28px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+.logo span{
+  color:#ff6600;
+}
+
 #resume{
   min-height: 100vh;
   padding: 100px 10%;
