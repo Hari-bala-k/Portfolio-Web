@@ -53,7 +53,7 @@ const projects = [
 
     live:"#",
 
-    github:"https://github.com/Hari-bala-k/Portfolio"
+    github:"https://github.com/Hari-bala-k/Portfolio-Web"
   },
 
   {
