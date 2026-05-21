@@ -1,3 +1,4 @@
+
 *{
   margin:0;
   padding:0;
@@ -11,20 +12,41 @@ body{
   overflow-x:hidden;
 }
 
-/* PROJECT SECTION */
+/* =========================
+   PROJECT SECTION
+========================= */
 
 .projects-section{
+  min-height:100vh;
+  padding:100px 8%;
   position:relative;
 
-  padding:40px 8%;
+  background:url("../Media/background.png") center/cover no-repeat;
+  background-attachment:fixed;
 
-  background:
-  radial-gradient(circle at top left,#ff6b001f,transparent 25%),
-  radial-gradient(circle at bottom right,#ff95001a,transparent 25%),
-  #080808;
+  overflow:hidden;
 }
 
-/* TOP HEADING */
+/* DARK OVERLAY */
+
+.projects-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+  z-index:0;
+}
+
+/* CONTENT ABOVE OVERLAY */
+
+.projects-section > *{
+  position:relative;
+  z-index:1;
+}
+
+/* =========================
+   HEADING
+========================= */
 
 .project-heading{
   text-align:center;
@@ -33,7 +55,6 @@ body{
 
 .project-heading span{
   display:inline-block;
-
   padding:10px 18px;
 
   background:rgba(255,123,0,0.1);
@@ -51,7 +72,6 @@ body{
 }
 
 .project-heading h2{
-
   font-size:65px;
   font-weight:800;
 
@@ -85,20 +105,23 @@ body{
   font-size:17px;
 }
 
-/* PROJECT GRID */
+/* =========================
+   PROJECT GRID
+========================= */
 
 .project-container{
   display:grid;
 
-  grid-template-columns:
-  repeat(3, 1fr);
+  grid-template-columns:repeat(3,1fr);
 
   gap:28px;
 
   align-items:start;
 }
 
-/* CARD */
+/* =========================
+   CARD
+========================= */
 
 .project-card{
   position:relative;
@@ -120,7 +143,18 @@ body{
   margin:auto;
 }
 
-/* IMAGE */
+.project-card:hover{
+  transform:translateY(-8px);
+
+  border-color:rgba(255,123,0,0.3);
+
+  box-shadow:
+  0 15px 35px rgba(255,123,0,0.15);
+}
+
+/* =========================
+   IMAGE
+========================= */
 
 .project-image{
   width:100%;
@@ -131,7 +165,17 @@ body{
   transition:0.6s;
 }
 
-/* CONTENT */
+.project-card:hover .project-image{
+  transform:scale(1.05);
+}
+
+.image-border{
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+/* =========================
+   CONTENT
+========================= */
 
 .project-content{
   padding:24px;
@@ -152,7 +196,9 @@ body{
   font-size:15px;
 }
 
-/* TECH STACK */
+/* =========================
+   TECH STACK
+========================= */
 
 .tech-stack{
   display:flex;
@@ -176,14 +222,14 @@ body{
   font-size:12px;
 }
 
-/* BUTTON CONTAINER */
+/* =========================
+   BUTTONS
+========================= */
 
 .project-links{
   display:flex;
   gap:12px;
 }
-
-/* COMMON BUTTON STYLE */
 
 .project-links a{
   flex:1;
@@ -209,10 +255,9 @@ body{
   backdrop-filter:blur(10px);
 }
 
-/* LIVE DEMO BUTTON */
+/* LIVE BUTTON */
 
 .live-btn{
-
   background:
   linear-gradient(
     135deg,
@@ -227,7 +272,6 @@ body{
 }
 
 .live-btn:hover{
-
   transform:
   translateY(-3px)
   scale(1.03);
@@ -236,10 +280,9 @@ body{
   0 12px 30px rgba(255,123,0,0.45);
 }
 
-/* GITHUB BUTTON */
+/* PROJECT GITHUB BUTTON */
 
-.github-btn{
-
+.project-github-btn{
   background:
   rgba(255,255,255,0.05);
 
@@ -249,8 +292,7 @@ body{
   color:white;
 }
 
-.github-btn:hover{
-
+.project-github-btn:hover{
   transform:
   translateY(-3px)
   scale(1.03);
@@ -267,17 +309,13 @@ body{
 /* CLICK EFFECT */
 
 .project-links a:active{
-
-  transform:
-  scale(0.96);
-
+  transform:scale(0.96);
   transition:0.1s;
 }
 
 /* SHINE EFFECT */
 
 .project-links a::before{
-
   content:"";
 
   position:absolute;
@@ -302,7 +340,10 @@ body{
 .project-links a:hover::before{
   left:120%;
 }
-/* RESPONSIVE */
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media(max-width:1100px){
 
@@ -316,6 +357,7 @@ body{
 
   .projects-section{
     padding:100px 20px;
+    background-attachment:scroll;
   }
 
   .project-heading h2{
@@ -327,44 +369,3 @@ body{
   }
 
 }
-
-/* IMAGE HOVER EFFECT */
-.image-border{
-  border:1px solid rgba(255,255,255,0.08);
-}
-
-.projects-section{
-  min-height: 100vh;
-  padding: 100px 8%;
-  position: relative;
-
-  /* FULL STICKY BACKGROUND IMAGE */
-  background: url("../Media/background.png") center/cover no-repeat;
-  background-attachment: fixed;
-
-  color: white;
-  overflow: hidden;
-}
-
-/* DARK OVERLAY FOR READABILITY */
-.projects-section::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
-  z-index: 0;
-}
-
-/* CONTENT ABOVE OVERLAY */
-.projects-section > *{
-  position: relative;
-  z-index: 1;
-}
-
-/* MOBILE FIX (important) */
-@media (max-width: 768px){
-  .projects-section{
-    background-attachment: scroll;
-  }
-}
-
