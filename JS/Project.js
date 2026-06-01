@@ -1,7 +1,24 @@
-// projects.js
+
 
 const projects = [
+  {
+  image:
+  "/Media/BMI.png",
 
+  tag:"Health & Fitness",
+
+  title:"BMI Calculator Web Application",
+
+  description:
+  "Modern BMI calculator with responsive glassmorphism UI, real-time body mass index calculation, and health status analysis.",
+
+  tech:["HTML","CSS","JavaScript"],
+
+  live:"https://hari-bala-k.github.io/BMIcalculator/",
+
+  github:"https://github.com/Hari-bala-k/BMIcalculator.git"
+}
+,
  {
   image:
   "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b",
