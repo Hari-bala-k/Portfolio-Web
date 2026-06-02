@@ -1,105 +1,234 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio/About</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/About.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | About</title>
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/About.css" />
 </head>
+
 <body>
-<header>
-  <nav class="navbar">
 
-    <h1 class="logo">
-      Hari<span>.</span>
-    </h1>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
 
-    <div class="nav-links">
-      <a href="/index.html">Home</a>
-      <a href="About.html" class="active">About</a>
-      <a href="Resume.html">Resume</a>
-      <a href="Project.html">Projects</a>
-      <a href="Contact.html">Contact</a>
+      <h1 class="logo">
+        Hari<span>.</span>
+      </h1>
+
+      <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="About.html" class="active">About</a>
+        <a href="Resume.html">Resume</a>
+        <a href="Project.html">Projects</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+
+      <a
+        href="https://github.com/Hari-bala-k"
+        target="_blank"
+        class="github-btn"
+      >
+        GitHub
+      </a>
+
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+
+    <div class="about-container">
+
+      <!-- About Card -->
+      <div class="about-card">
+
+        <span class="section-tag">About Me</span>
+
+        <h2>Java Backend Developer</h2>
+
+        <p>
+          I’m a passionate and self-driven Java Developer with a strong
+          interest in backend development and scalable application design.
+          I recently completed my Bachelor’s degree in Computer Science
+          and Engineering and enjoy building real-world applications
+          using Java and modern backend technologies.
+        </p>
+
+        <p>
+          I have hands-on experience with Spring Boot, REST APIs,
+          MySQL, JWT authentication, and object-oriented programming.
+          I continuously improve my problem-solving skills through
+          Data Structures and Algorithms while exploring industry-level
+          backend development practices and software design concepts.
+        </p>
+
+        <div class="about-buttons">
+          <a href="/Media/Hari_Resume .pdf" class="btn-primary" target="_blank">View Resume</a>
+        </div>
+
+      </div>
+
+      <!-- Highlights -->
+      <div class="about-highlights">
+
+        <!-- Education -->
+        <div class="highlight">
+
+          <div class="highlight-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <h3>Education</h3>
+
+          <p class="title">
+            Bachelor of Engineering – Computer Science and Engineering
+          </p>
+
+          <h4>Sri Ramakrishna Institute of Technology</h4>
+
+          <span>2022 – 2026</span>
+
+          <p>CGPA: 7.79</p>
+
+        </div>
+
+        <!-- Focus -->
+        <div class="highlight">
+
+          <div class="highlight-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <h3>Focus</h3>
+
+          <ul>
+            <li>Backend Development with Java & Spring Boot</li>
+            <li>Building Secure REST APIs</li>
+            <li>Improving DSA & Problem Solving</li>
+            <li>Learning Clean Architecture</li>
+            <li>Preparing for Software Engineering Roles</li>
+          </ul>
+
+        </div>
+
+        <!-- Projects -->
+        <div class="highlight">
+
+          <div class="highlight-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+
+          <h3>Projects</h3>
+
+          <div class="project-box">
+            <h4>ReLink – Donation Platform</h4>
+
+            <p>
+              Developed secure backend APIs using Java,
+              Spring Boot, PostgreSQL, and JWT authentication.
+            </p>
+          </div>
+
+          <div class="project-box">
+            <h4>E-Commerce Backend API</h4>
+
+            <p>
+              Built scalable APIs for authentication,
+              order processing, and product management.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Learning -->
+        <div class="highlight">
+
+          <div class="highlight-icon">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+
+          <h3>Learning</h3>
+
+          <ul>
+            <li>Advanced Java & Collections</li>
+            <li>Spring Boot & Microservices</li>
+            <li>Database Optimization</li>
+            <li>Low-Level Design Concepts</li>
+            <li>Git & API Testing</li>
+          </ul>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <a
-      href="https://github.com/Hari-bala-k"
-      target="_blank"
-      class="github-btn"
-    >
-      GitHub
-    </a>
+  </section>
 
-  </nav>
-</header>
-   <section id="about">
-
-  <div class="about-container">
-
-    <div class="about-card">
-
-      <h2>About Me</h2>
-
-      <p>
-        I am a final year Computer Science student and an aspiring Java Developer
-        who enjoys building clean, functional, and scalable web applications.
-      </p>
-
-      <p>
-        I focus on backend development using Java and improve my problem-solving
-        skills through Data Structures and Algorithms.
-      </p>
-
-    </div>
-
-    <div class="about-highlights">
-
-      <div class="highlight">
-        <h3>🎓 Education</h3>
-        <p>Final Year CSE Student</p>
-      </div>
-
-      <div class="highlight">
-        <h3>💻 Focus</h3>
-        <p>Java + Web Development</p>
-      </div>
-
-      <div class="highlight">
-        <h3>🚀 Projects</h3>
-        <p>Trello-like App + Portfolio</p>
-      </div>
-
-      <div class="highlight">
-        <h3>📚 Learning</h3>
-        <p>DSA + Backend Systems</p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+  <!-- Footer -->
   <footer class="site-footer">
+
     <div class="footer-top">
+
       <div class="footer-brand">
         <h2>Hari<span>.</span></h2>
         <p>Java Developer & Web Developer</p>
       </div>
 
-
       <div class="footer-social">
-        <a href="https://github.com/Hari-bala-k" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/hari-bala-krishnan/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/itz._.hxriee__?igsh=MWJyajVqOTRsd3dlaw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+        <a
+          href="https://github.com/Hari-bala-k"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/hari-bala-krishnan/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/itz._.hxriee__/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+
       </div>
+
     </div>
-    <p class="footer-copy">© 2026 Hari. All rights reserved.</p>
+
+    <p class="footer-copy">
+      © 2026 Hari. All rights reserved.
+    </p>
+
   </footer>
+
 </body>
 </html>
+```
