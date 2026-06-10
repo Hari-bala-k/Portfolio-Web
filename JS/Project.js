@@ -3,7 +3,7 @@
 const projects = [
   {
   image:
-  "../Media/BMI.png",
+  "./Media/BMI.png",
 
   tag:"Health & Fitness",
 
