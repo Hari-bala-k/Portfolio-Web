@@ -68,7 +68,7 @@ const projects = [
 
     tech:["HTML","CSS","JavaScript"],
 
-    live:"#",
+    live:"https://hari-bala-k.github.io/Portfolio-Web/",
 
     github:"https://github.com/Hari-bala-k/Portfolio-Web"
   },
